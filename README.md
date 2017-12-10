@@ -15,9 +15,7 @@ $(".exemple").autosave();
 Here somes html exemples:
 ```html
 <input type="text" name="xs_username" class="exemple" data-action="action/ajax-01.html.php" >
-```
 
-```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" value="" placeholder="Username">
 </form>

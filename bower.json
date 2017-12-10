@@ -1,0 +1,27 @@
+{
+	"name": "autosave",
+	"version" : "1.0",
+	"homepage": "https://github.com/lognoz/autosave",
+	"keywords": [
+		"autosave",
+		"blur",
+		"input",
+		"textarea",
+		"select",
+		"ajax"
+	],
+	"authors": [
+		"Marc-Antoine Loignon <info@lognoz.com>"
+	],
+	"description": "",
+	"main": "",
+	"license": "BSD",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests",
+		"exemples"
+	]
+}

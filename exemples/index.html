@@ -1,0 +1,348 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Auosave Tests</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="asset/css/main.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>
+					Autosave exemples</br>
+					<span>Version 0.0.2</span>
+				</h1>
+			</div>
+			<div class="content">
+				<!--<div class="bloc">
+					<h2>Demo script</h2>
+					<div class="output">
+						<pre><code>var func = {
+  before : function (parameter) {
+    parameter.target.addClass("loading");
+    return true;
+  },
+  success : function (data, parameter) {
+    var target = parameter.target;
+    var field = target.parent();
+    var retry = field.find(".retry");
+
+    retry.html("");
+    target.removeClass("fail");
+
+    if (data) {
+      var svg = field.find(".checkmark");
+      var time = $.now();
+
+      svg.css('display', 'block');
+      target.removeClass("loading");
+      field.addClass("success");
+      target.attr("data-success", time);
+
+      window.setTimeout(function(){
+        if (time == target.attr("data-success")) {
+          svg.fadeOut("fast", function() {
+              field.removeClass("success");
+          });
+        }
+      }, 2500);
+    }
+    else {
+      func.fail(parameter);
+    }
+  },
+  fail : function (parameter) {
+    var target = parameter.target;
+    var field = target.parent();
+    var element = field.find(".retry");
+
+    parameter.target.removeClass("loading");
+    parameter.target.addClass("fail");
+    parameter.retry(element);
+  }
+};
+
+$(".exemple").autosave(func);</code></pre>
+					</div>
+				</div>-->
+				<div class="bloc">
+					<h2>Unique field</h2>
+					<div>
+						<div class="field">
+							<input type="text" name="xs_username" value="" placeholder="Username"
+								   data-action="action/ajax-01.html.php" class="exemple">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+							</svg>
+							<span class="retry"></span>
+						</div>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</div>
+
+				<form action="action/ajax-01.html.php" method="post" class="exemple bloc">
+					<h2>Multiple fields</h2>
+					<div>
+						<div class="field">
+							<input type="text" name="xs_username" id="xs_username" value="" placeholder="Username">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+							</svg>
+							<span class="retry"></span>
+						</div>
+					 	<div class="field">
+							<input type="text" name="xs_name" id="xs_name" value="" placeholder="Name">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+							</svg>
+							<span class="retry"></span>
+						</div>
+					 	<div class="field">
+							<input type="text" name="xs_phone" id="xs_phone" value="" placeholder="Phone">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+							</svg>
+							<span class="retry"></span>
+						</div>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</form>
+
+				<form action="action/ajax-01.html.php" method="post" class="exemple bloc">
+					<h2>Overwrite action in multiple fields</h2>
+					<div>
+						<div class="field">
+							<input type="text" name="xs_username" id="xs_username" value=""
+								   placeholder="Username"
+								   data-action="action/ajax-02.html.php">
+
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+   								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+   								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+   							</svg>
+							<span class="retry"></span>
+   						</div>
+
+					 	<div class="field">
+							<input type="text" name="xs_name" id="xs_name" value="" placeholder="Name">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+   								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+   								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+   							</svg>
+							<span class="retry"></span>
+   						</div>
+					 	<div class="field">
+							<input type="text" name="xs_phone" id="xs_phone" value="" placeholder="Phone">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+   								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+   								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+   							</svg>
+							<span class="retry"></span>
+   						</div>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</form>
+
+				<form action="action/ajax-01.html.php" method="post" class="exemple bloc">
+					<h2>Checkbox</h2>
+					<div class="field">
+						<label>
+							<input type="checkbox" name="xs_vehicule" value="bike">I have a bike
+						</label>
+						<label>
+							<input type="checkbox" name="xs_vehicule" value="car">I have a car
+						</label>
+						<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+							<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+							<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+						</svg>
+						<span class="retry"></span>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</form>
+
+				<form action="action/ajax-01.html.php" method="post" class="exemple bloc">
+					<h2>Radio</h2>
+					<div class="field">
+						<label>
+							<input type="radio" name="xs_vehicule" value="bike">I have a bike
+						</label>
+						<label>
+							<input type="radio" name="xs_vehicule" value="car">I have a car
+						</label>
+						<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+							<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+							<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+						</svg>
+						<span class="retry"></span>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</form>
+
+				<form action="action/ajax-01.html.php" method="post" class="exemple bloc">
+					<h2>Send group of input (hidden)</h2>
+					<div>
+						<div class="field">
+							<input type="text" name="xs_username" id="xs_username" value=""
+							       placeholder="Username"
+								   data-group="xs_username,xs_token,xs_page">
+						    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+  								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+  							</svg>
+							<span class="retry"></span>
+  						</div>
+
+					 	<input type="hidden" name="xs_token" id="xs_token"
+						       value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
+							   data-group="xs_username,xs_token,xs_page">
+
+					 	<input type="hidden" name="xs_page" id="xs_page" value="index.html"
+							   data-group="xs_username,xs_token,xs_page">
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</form>
+
+				<form action="action/ajax-01.html.php" method="post" class="exemple bloc">
+					<h2>Select</h2>
+					<div>
+						<div class="field">
+							<select name="xs_vehicule">
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="mercedes">Mercedes</option>
+								<option value="audi">Audi</option>
+							</select>
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+  								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+  							</svg>
+							<span class="retry"></span>
+						</div>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</form>
+
+				<div data-action="action/ajax-01.html.php" class="exemple bloc">
+					<h2>ContentEditable</h2>
+					<div class="field">
+						<div contenteditable="true" class="textarea" data-name="xs_content"></div>
+						<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+							<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+							<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+						</svg>
+						<span class="retry"></span>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</div>
+				<div class="bloc">
+					<h2>Failure updating</h2>
+					<div>
+						<div class="field">
+							<input type="text" name="xs_username" value="" placeholder="Username"
+								   data-action="action/ajax-03.html.php" class="exemple">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+							</svg>
+							<span class="retry"></span>
+						</div>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+		<script type="text/javascript" src="../dist/latest/autosave.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script type="text/javascript">
+			var func = {
+				before : function (parameter) {
+					var bloc = parameter.target.closest(".bloc");
+					var code = bloc.find("code");
+					var list = {
+						action : parameter.action,
+						data : parameter.data
+					};
+
+					code.html(JSON.stringify(list, null, 4));
+					parameter.target.addClass("loading");
+					return true;
+				},
+				success : function (data, parameter) {
+					var target = parameter.target;
+					var field = target.closest(".field");
+					var retry = field.find(".retry");
+
+					retry.html("");
+					target.removeClass("fail");
+
+					if (data) {
+						var svg = field.find(".checkmark");
+						var time = $.now();
+
+						target.removeClass("loading");
+						field.addClass("success");
+						svg.attr("data-time", time);
+						svg.css('display', 'block');
+
+						window.setTimeout(function(){
+							if (time == svg.attr("data-time")) {
+								svg.fadeOut("fast", function() {
+								    field.removeClass("success");
+								});
+							}
+						}, 2500);
+					}
+					else {
+						func.fail(parameter);
+					}
+				},
+				fail : function (parameter) {
+					var target = parameter.target;
+					var field = target.closest(".field");
+					var element = field.find(".retry");
+
+					target.removeClass("loading");
+					target.addClass("fail");
+					parameter.retry(element);
+				}
+			};
+
+			$(".exemple").autosave(func);
+		</script>
+	</body>
+</html>

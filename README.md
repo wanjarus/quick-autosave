@@ -15,7 +15,7 @@ Now, you can configure your autosave with jQuery selector.
 ```js
 $(".exemple").autosave();
 ```
-There is two way to create a DOM element that can be use by autosave. Autosave will use by the default the `action` or the `data-action` of your DOM selector for your ajax call. But you can overwrite your action's selector by using `data-action` on your form element.
+There is two way to create a DOM element that can be use by autosave. Autosave will use by the default the `action` or the `data-action` of your DOM selector for your ajax call. But you can overwrite it by using `data-action` on your form element.
 
 ```html
 <input type="text" name="xs_username" class="exemple" data-action="action/ajax-01.html.php" >
@@ -26,8 +26,8 @@ There is two way to create a DOM element that can be use by autosave. Autosave w
 
 <!-- Overwirite action form xs_phone -->
 <form action="action/ajax-01.html.php" method="post" class="exemple">
-  <input type="text" name="xs_username" value="">
-  <input type="text" name="xs_phone" value="" data-action="action/ajax-02.html.php">
+  <input type="text" name="xs_username">
+  <input type="text" name="xs_phone" data-action="action/ajax-02.html.php">
 </form>
 ```
 

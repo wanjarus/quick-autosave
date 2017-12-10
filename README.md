@@ -22,7 +22,6 @@ Here somes basics exemples:
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" value="" placeholder="Username">
   <input type="text" name="xs_name" value="" placeholder="Name">
-  <input type="text" name="xs_phone" value="" placeholder="Phone">
 </form>
 ```
 
@@ -31,8 +30,7 @@ Autosave will use by the default the action or the data-action of your DOM selec
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <!-- Ajax call : "action/ajax-01.html.php" -->
   <input type="text" name="xs_username" value="" placeholder="Username">
-  <input type="text" name="xs_name" value="" placeholder="Name">
-  
+
   <!-- Ajax call : "action/ajax-02.html.php" -->
   <input type="text" name="xs_phone" value="" placeholder="Phone" 
          data-action="action/ajax-02.html.php">
@@ -43,14 +41,11 @@ To create a group, you can use data-group attribute.
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" id="xs_username" value=""
-         placeholder="Username" data-group="xs_username,xs_token,xs_redirect">
+         placeholder="Username" data-group="xs_username,xs_token">
          
   <input type="hidden" name="xs_token" id="xs_token"
          value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
-         data-group="xs_username,xs_token,xs_redirect">
-         
-  <input type="hidden" name="xs_redirect" id="xs_redirect" value="index.html"
-         data-group="xs_username,xs_token,xs_redirect">
+         data-group="xs_username,xs_token">
 </form>
 ```
 
@@ -60,8 +55,7 @@ To create a group, you can use data-group attribute.
 
 {
   "xs_username": "a",
-  "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$",
-  "xs_redirect": "index.html"
+  "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$"
 }
 ```
 

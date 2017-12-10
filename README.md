@@ -43,7 +43,8 @@ To create a group, you can use data-group attribute.
 ```
 
 ```js
-// Data send to your ajax page when you create a modification to xs_username input.
+// Data send to your ajax page when you create a 
+// modification to xs_username input.
 
 {
   "xs_username": "a",

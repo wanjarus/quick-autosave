@@ -35,6 +35,7 @@ Here somes basics exemples:
 </form>
 ```
 
+To create a group, you can use data-group attribute.
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" id="xs_username" value=""
@@ -47,6 +48,17 @@ Here somes basics exemples:
   <input type="hidden" name="xs_page" id="xs_page" value="index.html"
          data-group="xs_username,xs_token,xs_page">
 </form>
+```
+
+```js
+// Data send to your ajax page when you create a 
+// modification to xs_username input.
+
+{
+  "xs_username": "a",
+  "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$",
+  "xs_page": "index.html"
+}
 ```
 
 ## Options

@@ -2,7 +2,7 @@
 Autosave forms when they change.
 
 ## Setup
-First, include the script located on the dist folder and jQuery.
+First, include the script located on the `dist` folder and jQuery.
 ```html
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="dist/latest/autosave.min.js"></script>
@@ -21,7 +21,7 @@ There is two way to create a DOM element that can be use by autosave.
 </form>
 ```
 
-Autosave will use by the default the action or the data-action of your DOM selector for making your ajax call. But you can overwrite your action's selector by using data-action on your form element.
+Autosave will use by the default the `action` or the `data-action` of your DOM selector for making your ajax call. But you can overwrite your action's selector by using data-action on your form element.
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <!-- action/ajax-01.html.php -->
@@ -32,7 +32,7 @@ Autosave will use by the default the action or the data-action of your DOM selec
 </form>
 ```
 
-To create a group, you can use data-group attribute.
+To create a group, you can use `data-group` attribute.
 ```html
 <input type="text" name="xs_username" id="xs_username" value=""
        placeholder="Username" data-group="xs_username,xs_token">
@@ -52,7 +52,7 @@ To create a group, you can use data-group attribute.
 }
 ```
 
-If you want to use contenteditable as form element, you can use data-name attribute. 
+If you want to use contenteditable as form element, you can use `data-name` attribute. 
 ```html
 <div contenteditable="true" class="textarea" data-name="xs_content"></div>
 ```

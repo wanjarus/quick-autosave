@@ -10,7 +10,43 @@ First, include the script located on the dist folder and jQuery.
 
 Now, you can configure your autosave with jQuery selector. 
 ```js
-$("form").autosave();
+$(".exemple").autosave();
+```
+Here somes basics exemples:
+```html
+<input type="text" name="xs_username" placeholder="Username" class="exemple"
+       data-action="action/ajax-01.html.php" >
+```
+
+```html
+<form action="action/ajax-01.html.php" method="post" class="exemple">
+  <input type="text" name="xs_username" value="" placeholder="Username">
+  <input type="text" name="xs_name" value="" placeholder="Name">
+  <input type="text" name="xs_phone" value="" placeholder="Phone">
+</form>
+```
+
+```html
+<form action="action/ajax-01.html.php" method="post" class="exemple">
+  <input type="text" name="xs_username" value="" placeholder="Username">
+  <input type="text" name="xs_name" value="" placeholder="Name">
+  <input type="text" name="xs_phone" value="" placeholder="Phone" 
+         data-action="action/ajax-02.html.php">
+</form>
+```
+
+```html
+<form action="action/ajax-01.html.php" method="post" class="exemple">
+  <input type="text" name="xs_username" id="xs_username" value=""
+         placeholder="Username" data-group="xs_username,xs_token,xs_page">
+         
+  <input type="hidden" name="xs_token" id="xs_token"
+         value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
+         data-group="xs_username,xs_token,xs_page">
+         
+  <input type="hidden" name="xs_page" id="xs_page" value="index.html"
+         data-group="xs_username,xs_token,xs_page">
+</form>
 ```
 
 ## Options

@@ -14,8 +14,7 @@ $(".exemple").autosave();
 ```
 Here somes html exemples:
 ```html
-<input type="text" name="xs_username" placeholder="Username" class="exemple"
-       data-action="action/ajax-01.html.php" >
+<input type="text" name="xs_username" class="exemple" data-action="action/ajax-01.html.php" >
 ```
 
 ```html
@@ -28,11 +27,10 @@ Autosave will use by the default the action or the data-action of your DOM selec
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <!-- Ajax call : "action/ajax-01.html.php" -->
-  <input type="text" name="xs_username" value="" placeholder="Username">
+  <input type="text" name="xs_username" value="">
 
   <!-- Ajax call : "action/ajax-02.html.php" -->
-  <input type="text" name="xs_phone" value="" placeholder="Phone" 
-         data-action="action/ajax-02.html.php">
+  <input type="text" name="xs_phone" value="" data-action="action/ajax-02.html.php">
 </form>
 ```
 

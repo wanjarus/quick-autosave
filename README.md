@@ -56,13 +56,17 @@ If you want to use contenteditable as form element, you can use `data-name` attr
 ## Options
 
 ```js
-var func = {
-  before : function (parameter) {},
-  success : function (data, parameter) {},
-  fail : function (parameter) {}
-};
-
-$(".exemple").autosave(func);
+$(".exemple").autosave({
+  before : function (parameter) {
+  
+  },
+  success : function (data, parameter) {
+  
+  },
+  fail : function (parameter) {
+  
+  }
+});
 ```
 
 ### before

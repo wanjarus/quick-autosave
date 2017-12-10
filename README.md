@@ -43,7 +43,7 @@ To create a group, you can use data-group attribute.
          
 <input type="hidden" name="xs_token" id="xs_token"
        value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
-       vdata-group="xs_username,xs_token">
+       data-group="xs_username,xs_token">
 ```
 
 ```js

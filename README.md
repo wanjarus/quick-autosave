@@ -43,14 +43,14 @@ To create a group, you can use data-group attribute.
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" id="xs_username" value=""
-         placeholder="Username" data-group="xs_username,xs_token,xs_page">
+         placeholder="Username" data-group="xs_username,xs_token,xs_redirect">
          
   <input type="hidden" name="xs_token" id="xs_token"
          value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
-         data-group="xs_username,xs_token,xs_page">
+         data-group="xs_username,xs_token,xs_redirect">
          
-  <input type="hidden" name="xs_page" id="xs_page" value="index.html"
-         data-group="xs_username,xs_token,xs_page">
+  <input type="hidden" name="xs_redirect" id="xs_redirect" value="index.html"
+         data-group="xs_username,xs_token,xs_redirect">
 </form>
 ```
 
@@ -61,7 +61,7 @@ To create a group, you can use data-group attribute.
 {
   "xs_username": "a",
   "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$",
-  "xs_page": "index.html"
+  "xs_redirect": "index.html"
 }
 ```
 

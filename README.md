@@ -58,36 +58,25 @@ If you want to use contenteditable as form element, you can use data-name attrib
 ```
 
 ## Options
-<dl>
-  <dt>before :</dt>
-  <dd>Function execute before to send ajax request. This function can be use as validation.</dd>
-</dl>
-<dl>
-  <dt>success :</dt>
-  <dd>Function execute after ajax call. You can treat your data return and forward to your fail function if update MySQL request didn't working.</dd>
-</dl>
-<dl>
-  <dt>fail :</dt>
-  <dd>Function execute if ajax call fail or forward by success function.</dd>
-</dl>
-
-## Usage exemple
 
 ```js
 var func = {
-  before : function (parameter) {
-  
-  },
-  success : function (data, parameter) {
-  
-  },
-  fail : function (parameter) {
-  
-  }
+  before : function (parameter) {},
+  success : function (data, parameter) {},
+  fail : function (parameter) {}
 };
 
-$("form").autosave(func);
+$(".exemple").autosave(func);
 ```
+
+### before
+Function execute before to send ajax request. This function can be use as validation.
+
+### success
+Function execute after ajax call. You can treat your data return and forward to your fail function if update MySQL request didn't working.
+
+### fail
+Function execute if ajax call fail or forward by success function.
 
 ## Author
 Marc-Antoine Loignon - <https://www.lognoz.com>

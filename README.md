@@ -3,15 +3,15 @@ Autosave forms when they change.
 
 ## Options
 <dl>
-  <dt>before</dt>
+  <dt>before :</dt>
   <dd>Function execute before to send ajax request. This function can be use as validation.</dd>
 </dl>
 <dl>
-  <dt>success</dt>
+  <dt>success :</dt>
   <dd>Function execute after ajax call. You can treat your data return and forward to your fail function if update MySQL request didn't working.</dd>
 </dl>
 <dl>
-  <dt>fail</dt>
+  <dt>fail :</dt>
   <dd>Function execute if ajax call fail or forward by success function.</dd>
 </dl>
 

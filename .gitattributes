@@ -1,2 +1,2 @@
 *.js linguist-language=javascript
-dist/latest/* linguist-vendored=true
+dist/* linguist-vendored=true

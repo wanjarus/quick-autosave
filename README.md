@@ -21,7 +21,6 @@ Here somes html exemples:
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" value="" placeholder="Username">
-  <input type="text" name="xs_name" value="" placeholder="Name">
 </form>
 ```
 
@@ -39,14 +38,12 @@ Autosave will use by the default the action or the data-action of your DOM selec
 
 To create a group, you can use data-group attribute.
 ```html
-<form action="action/ajax-01.html.php" method="post" class="exemple">
-  <input type="text" name="xs_username" id="xs_username" value=""
-         placeholder="Username" data-group="xs_username,xs_token">
+<input type="text" name="xs_username" id="xs_username" value=""
+       placeholder="Username" data-group="xs_username,xs_token">
          
-  <input type="hidden" name="xs_token" id="xs_token"
-         value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
-         data-group="xs_username,xs_token">
-</form>
+<input type="hidden" name="xs_token" id="xs_token"
+       value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
+       vdata-group="xs_username,xs_token">
 ```
 
 ```js
@@ -57,6 +54,11 @@ To create a group, you can use data-group attribute.
   "xs_username": "a",
   "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$"
 }
+```
+
+If you want to use contenteditable as form element, you can use data-name attribute. 
+```html
+<div contenteditable="true" class="textarea" data-name="xs_content"></div>
 ```
 
 ## Options

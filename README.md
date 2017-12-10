@@ -1,6 +1,9 @@
 # AUTOSAVE.JS
 Autosave forms when they change.
 
+## Install
+Just [download a ZIP](https://github.com/lognoz/autosave/archive/master.zip) file.
+
 ## Setup
 First, include the script located on the `dist` folder and jQuery.
 ```html
@@ -43,9 +46,6 @@ To create a group, you can use `data-group` attribute.
 ```
 
 ```js
-// Data send to your ajax page when you create a 
-// modification to xs_username input.
-
 {
   "xs_username": "a",
   "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$"

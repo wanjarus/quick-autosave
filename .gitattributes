@@ -1,2 +1,2 @@
 *.js linguist-language=javascript
-dist/latest/autosave.min.js linguist-vendored=true
+dist/latest/* linguist-vendored=true

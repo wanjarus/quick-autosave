@@ -1,2 +1,1 @@
-*.js linguist-language=javascript
-dist/* linguist-documentation
+*.html linguist-language=javascript

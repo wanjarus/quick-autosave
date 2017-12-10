@@ -24,10 +24,10 @@ There is two way to create a DOM element that can be use by autosave.
 Autosave will use by the default the action or the data-action of your DOM selector for making your ajax call. But you can overwrite your action's selector by using data-action on your form element.
 ```html
 <form action="action/ajax-01.html.php" method="post" class="exemple">
-  <!-- Ajax call : "action/ajax-01.html.php" -->
+  <!-- action/ajax-01.html.php -->
   <input type="text" name="xs_username" value="">
 
-  <!-- Ajax call : "action/ajax-02.html.php" -->
+  <!-- action/ajax-02.html.php -->
   <input type="text" name="xs_phone" value="" data-action="action/ajax-02.html.php">
 </form>
 ```

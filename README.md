@@ -12,7 +12,7 @@ Now, you can configure your autosave with jQuery selector.
 ```js
 $(".exemple").autosave();
 ```
-Here somes basics exemples:
+Here somes html exemples:
 ```html
 <input type="text" name="xs_username" placeholder="Username" class="exemple"
        data-action="action/ajax-01.html.php" >

@@ -1,6 +1,18 @@
 # AUTOSAVE.JS
 Autosave forms when they change.
 
+## Setup
+First, include the script located on the dist folder and jQuery.
+```html
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="dist/latest/autosave.min.js"></script>
+```
+
+Now, you can configure your autosave with jQuery selector. 
+```js
+$("form").autosave();
+```
+
 ## Options
 <dl>
   <dt>before :</dt>

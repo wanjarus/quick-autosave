@@ -1,0 +1,24 @@
+{
+  "name": "quick-autosave",
+  "version": "0.0.2",
+  "description": "Making dynamic form is not supposed to be hard to do. With autosave, improves user experience will never be that easy and quick.",
+  "keywords":[
+	  "autosave",
+	  "blur",
+	  "input",
+	  "textarea",
+	  "select",
+	  "ajax"
+  ],
+  "main": "./dist/latest/autosave.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lognoz/quick-autosave.git"
+  },
+  "author": "Marc-Antoine Loignon",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lognoz/quick-autosave/issues"
+  },
+  "homepage": "https://github.com/lognoz/quick-autosave#readme"
+}

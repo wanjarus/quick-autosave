@@ -18,13 +18,15 @@ $(".exemple").autosave();
 There is two way to create a DOM element that can be use by autosave. Autosave will use by the default the `action` or the `data-action` of your DOM selector for your ajax call. But you can overwrite it by using `data-action` on your form element.
 
 ```html
+<!-- With data-action -->
 <input type="text" name="xs_username" class="exemple" data-action="action/ajax-01.html.php" >
 
+<!-- With action -->
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username" value="" placeholder="Username">
 </form>
 
-<!-- Overwirite action form xs_phone -->
+<!-- Overwrite action -->
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username">
   <input type="text" name="xs_phone" data-action="action/ajax-02.html.php">
@@ -33,12 +35,8 @@ There is two way to create a DOM element that can be use by autosave. Autosave w
 
 To create a group, you can use `data-group` attribute.
 ```html
-<input type="text" name="xs_username" id="xs_username" value=""
-       placeholder="Username" data-group="xs_username,xs_token">
-         
-<input type="hidden" name="xs_token" id="xs_token"
-       value="a(XZ=96dC8DXtEe\*YH\r6LSCzE]X$"
-       data-group="xs_username,xs_token">
+<input type="text" name="xs_username" data-group="xs_username,xs_token">
+<input type="hidden" name="xs_token" value="D3YrsxHKPM" data-group="xs_username,xs_token">
 ```
 
 ```js

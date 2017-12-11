@@ -82,7 +82,7 @@ var func = {
 $(".exemple").autosave(func);
 ```
 
-Autosave will send to your custom events an object.
+Autosave will send an object to your custom function `before`, `success` and `fail`.
 <dl>
   <dt>action</dt>
   <dd></dd>

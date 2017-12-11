@@ -67,6 +67,7 @@ You can treat your ajax data return and forward to your fail function if update 
 For use `fail` function you need to set a function as this options. Autosave will call it if ajax request not working or if you forward your success function to this one. 
 
 To improve user experience you can use `parameter` send as arguments for output retry message and a link that will resend the ajax request. For instance, if you want to use it, you will simply need `parameter.retry` function and send a jQuery selector.
+
 ```js
 var func = {
   success : function (data, parameter) {
@@ -81,6 +82,7 @@ var func = {
 $(".exemple").autosave(func);
 ```
 
+Autosave will send to your custom events an object.
 <dl>
   <dt>action</dt>
   <dd></dd>

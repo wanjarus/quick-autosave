@@ -61,23 +61,27 @@ var func = {};
 
 Function execute before to send ajax request. This function can be use as validation.
 ```js
-var func.before = function (parameter) {
+func.before = function (parameter) {
 
 };
 ```
 
 Function execute after ajax call. You can treat your data return and forward to your fail function if update MySQL request didn't working.
 ```js
-var func.success = function (data, parameter) {
+func.success = function (data, parameter) {
 
 };
 ```
 
 Function execute if ajax call fail or forward by success function.
 ```js
-var func.fail = function (parameter) {
+func.fail = function (parameter) {
 
 };
+```
+
+```js
+$(".exemple").autosave(func);
 ```
 
 ## Author

@@ -13,8 +13,8 @@
 	"authors": [
 		"Marc-Antoine Loignon <info@lognoz.com>"
 	],
-	"description": "",
-	"main": "",
+	"description": "Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. But with quick autosave, it's possible to create dynamic forms quickly and easy to use.",
+	"main": "./dist/latest/autosave.min.js",
 	"license": "BSD",
 	"ignore": [
 		"**/.*",
@@ -23,5 +23,8 @@
 		"test",
 		"tests",
 		"exemples"
-	]
+	],
+	"dependencies": {
+    		"jquery": ">= 2.0.0"
+  	}
 }

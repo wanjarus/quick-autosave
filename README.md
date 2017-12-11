@@ -81,5 +81,26 @@ var func = {
 $(".exemple").autosave(func);
 ```
 
+<dl>
+  <dt>action</dt>
+  <dd></dd>
+</dl>
+<dl>
+  <dt>before</dt>
+  <dd></dd>
+</dl>
+<dl>
+  <dt>data</dt>
+  <dd></dd>
+</dl>
+<dl>
+  <dt>retry</dt>
+  <dd></dd>
+</dl>
+<dl>
+  <dt>target</dt>
+  <dd></dd>
+</dl>
+
 ## Author
 Marc-Antoine Loignon - <https://www.lognoz.com>

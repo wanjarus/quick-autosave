@@ -59,7 +59,7 @@ If you want to catch data return by autosave before send ajax request, you can s
 ```js
 $(".exemple").autosave({
   before : function (parameter) {
-
+    return true;
   }
 });
 ```
@@ -68,7 +68,7 @@ You can treat your ajax data return and forward to your fail function if update 
 ```js
 $(".exemple").autosave({
   success : function (data, parameter) {
-
+  
   }
 });
 ```

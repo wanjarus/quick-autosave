@@ -1,5 +1,5 @@
-# AUTOSAVE.JS
-Autosave forms when they change.
+# Autosave
+Making good form that prioritizing user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production than quality. But with autosave. guess it's possible to create dynamic forms quickly and interesting to use.
 
 ## Install
 Just [download a ZIP](https://github.com/lognoz/autosave/archive/master.zip) file.

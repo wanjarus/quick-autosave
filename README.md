@@ -55,7 +55,7 @@ If you want to use contenteditable as form element, you can use `data-name` attr
 
 ## Advanced Options
 
-Function execute before to send ajax request. This function can be use as validation.
+If you want to catch data return by autosave before send ajax request, you can set `before` function. It can be usefull for validation.
 ```js
 $(".exemple").autosave({
   before : function (parameter) {

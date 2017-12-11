@@ -1,5 +1,5 @@
-# AUTOSAVE
-Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. But with autosave, it's possible to create dynamic forms quickly and easy to use.
+# QUICK AUTOSAVE
+Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. But with quick autosave, it's possible to create dynamic forms quickly and easy to use.
 
 ## Install
 Just [download a ZIP](https://github.com/lognoz/autosave/archive/master.zip) file.

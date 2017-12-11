@@ -62,16 +62,14 @@ $(".exemple").autosave({
 });
 ```
 
-You can treat your ajax data return and forward to your fail function if update MySQL request didn't succeed.
+You can treat your ajax data return and forward to your fail function if update MySQL request didn't succeed. 
+
+For use `fail` function you need to set a function as this options. Autosave will call it if ajax request not working or if you forward your success function to this one. 
 ```js
 var func = {
   success : function (data, parameter) {
-    if (!data) {
+    if (!data)
       func.fail(parameter);
-    }
-    else {
-      // Do someting
-    }
   },
   fail : function (parameter) {
     var element = $(".retry");
@@ -81,8 +79,6 @@ var func = {
 
 $(".exemple").autosave(func);
 ```
-
-For use `fail` function you need to set a function as this options. Autosave will call it if ajax request not working or if you forward your success function to this one. 
 
 ## Author
 Marc-Antoine Loignon - <https://www.lognoz.com>

@@ -83,6 +83,9 @@ $(".exemple").autosave(func);
 ```
 
 Autosave will send an object to your custom function `before`, `success` and `fail`.
+#### action
+Ajax page called define with your action attribute.
+
 <dl>
   <dt>action</dt>
   <dd>Ajax page called define with your action attribute.</dd>

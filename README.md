@@ -2,7 +2,11 @@
 Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. But with quick autosave, it's possible to create dynamic forms quickly and easy to use.
 
 ## Install
-Just [download a ZIP](https://github.com/lognoz/autosave/archive/master.zip) file.
+You can get it on bower.
+```
+bower install quick-autosave
+```
+Or if you're not into package managment, just [download a ZIP](https://github.com/lognoz/autosave/archive/master.zip) file.
 
 ## Setup
 First, include the script located on the `dist` folder and jQuery.

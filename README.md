@@ -53,7 +53,7 @@ If you want to use contenteditable as form element, you can use `data-name` attr
 <div contenteditable="true" class="textarea" data-name="xs_content"></div>
 ```
 
-## Options
+## Advanced Options
 
 ```js
 $(".exemple").autosave({

@@ -56,27 +56,29 @@ If you want to use contenteditable as form element, you can use `data-name` attr
 ## Advanced Options
 
 ```js
-$(".exemple").autosave({
-  before : function (parameter) {
-  
-  },
-  success : function (data, parameter) {
-  
-  },
-  fail : function (parameter) {
-  
-  }
-});
+var func = {};
 ```
 
-### before
 Function execute before to send ajax request. This function can be use as validation.
+```js
+var func.before = function (parameter) {
 
-### success
+};
+```
+
 Function execute after ajax call. You can treat your data return and forward to your fail function if update MySQL request didn't working.
+```js
+var func.success = function (data, parameter) {
 
-### fail
+};
+```
+
 Function execute if ajax call fail or forward by success function.
+```js
+var func.fail = function (parameter) {
+
+};
+```
 
 ## Author
 Marc-Antoine Loignon - <https://www.lognoz.com>

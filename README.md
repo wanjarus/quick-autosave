@@ -74,8 +74,7 @@ var func = {
       func.fail(parameter);
   },
   fail : function (parameter) {
-    var element = $(".retry");
-    parameter.retry(element);
+    parameter.retry($(".retry"));
   }
 };
 

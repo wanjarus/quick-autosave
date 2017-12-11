@@ -42,11 +42,11 @@ To create a group, you can use `data-group` attribute.
 ```js
 {
   "xs_username": "a",
-  "xs_token": "a(XZ=96dC8DXtEe\\*YH\\r6LSCzE]X$"
+  "xs_token": "D3YrsxHKPM"
 }
 ```
 
-If you want to use contenteditable as form element, you can use `data-name` attribute. 
+If you want to use `contenteditable` as form element, you can use `data-name` attribute. 
 ```html
 <div contenteditable="true" class="textarea" data-name="xs_content"></div>
 ```
@@ -64,21 +64,25 @@ $(".exemple").autosave({
 
 You can treat your ajax data return and forward to your fail function if update MySQL request didn't succeed.
 ```js
-$(".exemple").autosave({
+var func = {
   success : function (data, parameter) {
-  
+    if (!data) {
+      func.fail(parameter);
+    }
+    else {
+      // Do someting
+    }
+  },
+  fail : function (parameter) {
+    var element = $(".retry");
+    parameter.retry(element);
   }
-});
+};
+
+$(".exemple").autosave(func);
 ```
 
 For use `fail` function you need to set a function as this options. Autosave will call it if ajax request not working or if you forward your success function to this one. 
-```js
-$(".exemple").autosave({
-  fail : function (parameter) {
-
-  }
-});
-```
 
 ## Author
 Marc-Antoine Loignon - <https://www.lognoz.com>

@@ -55,7 +55,7 @@ If you want to use contenteditable as form element, you can use `data-name` attr
 
 ## Advanced Options
 
-If you want to catch data return by autosave before send ajax request, you can set `before` function. It can be usefull for validation.
+If you want to catch data return by autosave before send ajax request, you can set `before` function. It can be usefull for validating your field.
 ```js
 $(".exemple").autosave({
   before : function (parameter) {
@@ -64,7 +64,7 @@ $(".exemple").autosave({
 });
 ```
 
-Function execute after ajax call. You can treat your data return and forward to your fail function if update MySQL request didn't working.
+You can treat your ajax data return and forward to your fail function if update MySQL request didn't succeed.
 ```js
 $(".exemple").autosave({
   success : function (data, parameter) {
@@ -73,7 +73,7 @@ $(".exemple").autosave({
 });
 ```
 
-Function execute if ajax call fail or forward by success function.
+For use `fail` function you need to set a function as this options. Autosave will call it if ajax request not working or if you forward your success function to this one. 
 ```js
 $(".exemple").autosave({
   fail : function (parameter) {

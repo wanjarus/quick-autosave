@@ -1,5 +1,5 @@
 # QUICK AUTOSAVE
-Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. But with quick autosave, it's possible to create dynamic forms quickly and easy to use.
+Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. With Autosave, improved user experience will never be as easy and as quick.
 
 ## Install
 You can get it on npm.

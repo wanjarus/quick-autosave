@@ -13,7 +13,7 @@
 	"authors": [
 		"Marc-Antoine Loignon <info@lognoz.com>"
 	],
-	"description": "Making dynamic form is not supposed to be hard to do. With autosave, improves user experience will never be that easy and quick.",
+	"description": "Making dynamic form is not supposed to be hard to do. With Autosave, improved user experience will never be as easy and as quick.",
 	"main": "./dist/latest/autosave.js",
 	"license": "BSD",
 	"ignore": [

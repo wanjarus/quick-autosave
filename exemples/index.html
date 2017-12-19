@@ -286,10 +286,10 @@ $(".exemple").autosave(func);</code></pre>
 		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-		<script type="text/javascript" src="../dist/latest/autosave.js"></script>
+		<script type="text/javascript" src="../dist/latest/autosave.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 		<script type="text/javascript">
-			var func = {
+			var argv = {
 				before : function (parameter) {
 					var bloc = parameter.target.closest(".bloc");
 					var code = bloc.find("code");
@@ -328,7 +328,7 @@ $(".exemple").autosave(func);</code></pre>
 						}, 2500);
 					}
 					else {
-						func.fail(parameter);
+						argv.fail(parameter);
 					}
 				},
 				fail : function (parameter) {
@@ -342,7 +342,7 @@ $(".exemple").autosave(func);</code></pre>
 				}
 			};
 
-			$(".exemple").autosave(func);
+			$(".exemple").autosave(argv);
 		</script>
 	</body>
 </html>

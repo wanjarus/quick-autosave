@@ -257,8 +257,11 @@ var autosave = {
 				config.value = info.value;
 				cache = JSON.stringify(config);
 
-				var retry = function(element) {
-					element.html("Your changes could not be saved. <a href=\"#\">Try again</a>");
+				var retry = function(element, feedback) {
+					if (feedback == undefined)
+						feedback = "Your changes could not be saved. <a href=\"#\">Try again</a>";
+
+					element.html(feedback);
 					var link = element.find("a");
 
 					link.attr("data-cache", cache);

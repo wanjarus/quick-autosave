@@ -1,6 +1,10 @@
 # QUICK AUTOSAVE
 Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. With Autosave, improved user experience will never be as easy and as quick.
 
+<a href="https://www.lognoz.com/quick-autosave/">
+  <img width="550" src="https://www.lognoz.com/quick-autosave/asset/img/presentation.png" alt="Demo">
+</a>
+
 ## Install
 You can get it on npm.
 ```

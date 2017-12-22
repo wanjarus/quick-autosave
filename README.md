@@ -87,26 +87,21 @@ $(".exemple").autosave(func);
 ```
 
 Autosave will send an object to your custom function `before`, `success` and `fail`.
-<dl>
-  <dt>parameter.action</dt>
-  <dd>Ajax page called define with your action attribute.</dd>
-</dl>
-<dl>
-  <dt>parameter.before</dt>
-  <dd>Element value before the update.</dd>
-</dl>
-<dl>
-  <dt>parameter.data</dt>
-  <dd>Value list of element updated.</dd>
-</dl>
-<dl>
-  <dt>parameter.retry</dt>
-  <dd>Function that can be use to output a "try again" message.</dd>
-</dl>
-<dl>
-  <dt>parameter.target</dt>
-  <dd>jQuery selector updated.</dd>
-</dl>
+
+**parameter.action**<br/>
+Ajax page called define with your action attribute.
+
+**parameter.before**<br/>
+Element value before the update.
+
+**parameter.data**<br/>
+Value list of element updated.
+
+**parameter.retry**<br/>
+Function that can be use to output a "try again" message.
+
+**parameter.target**<br/>
+jQuery selector updated.
 
 ## Author
 Marc-Antoine Loignon - <https://www.lognoz.com>

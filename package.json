@@ -8,7 +8,9 @@
     "input",
     "textarea",
     "select",
-    "ajax"
+    "ajax",
+    "submit",
+    "simple"
   ],
   "main": "./dist/latest/autosave.js",
   "repository": {

@@ -30,7 +30,7 @@ There are two ways to create a DOM element that can be used by Quick Autosave. T
   <input type="text" name="xs_username" value="" placeholder="Username">
 </form>
 
-<!-- Overwrite action -->
+<!-- Overwrite action for xs_phone -->
 <form action="action/ajax-01.html.php" method="post" class="exemple">
   <input type="text" name="xs_username">
   <input type="text" name="xs_phone" data-action="action/ajax-02.html.php">

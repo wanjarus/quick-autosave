@@ -15,57 +15,6 @@
 				</h1>
 			</div>
 			<div class="content">
-				<!--<div class="bloc">
-					<h2>Demo script</h2>
-					<div class="output">
-						<pre><code>var func = {
-  before : function (parameter) {
-    parameter.target.addClass("loading");
-    return true;
-  },
-  success : function (data, parameter) {
-    var target = parameter.target;
-    var field = target.parent();
-    var retry = field.find(".retry");
-
-    retry.html("");
-    target.removeClass("fail");
-
-    if (data) {
-      var svg = field.find(".checkmark");
-      var time = $.now();
-
-      svg.css('display', 'block');
-      target.removeClass("loading");
-      field.addClass("success");
-      target.attr("data-success", time);
-
-      window.setTimeout(function(){
-        if (time == target.attr("data-success")) {
-          svg.fadeOut("fast", function() {
-              field.removeClass("success");
-          });
-        }
-      }, 2500);
-    }
-    else {
-      func.fail(parameter);
-    }
-  },
-  fail : function (parameter) {
-    var target = parameter.target;
-    var field = target.parent();
-    var element = field.find(".retry");
-
-    parameter.target.removeClass("loading");
-    parameter.target.addClass("fail");
-    parameter.retry(element);
-  }
-};
-
-$(".exemple").autosave(func);</code></pre>
-					</div>
-				</div>-->
 				<div class="bloc">
 					<h2>Unique field</h2>
 					<div>
@@ -282,6 +231,24 @@ $(".exemple").autosave(func);</code></pre>
 						<pre><code>{}</code></pre>
 					</div>
 				</div>
+				<div class="bloc">
+					<h2>Custom retry message</h2>
+					<div>
+						<div class="field">
+							<input type="text" name="xs_username" value="" placeholder="Username"
+								   data-action="action/ajax-03.html.php" data-retry-feedback="dynamic" class="exemple">
+							<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+								<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+							</svg>
+							<span class="retry"></span>
+						</div>
+					</div>
+					<div class="output">
+						<h3>Exemple output:</h3>
+						<pre><code>{}</code></pre>
+					</div>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -335,10 +302,15 @@ $(".exemple").autosave(func);</code></pre>
 					var target = parameter.target;
 					var field = target.closest(".field");
 					var element = field.find(".retry");
+					var feedback = target.attr("data-retry-feedback");
 
 					target.removeClass("loading");
 					target.addClass("fail");
-					parameter.retry(element);
+
+					if (feedback == "dynamic")
+						parameter.retry(element, "Sorry, an error happened, please <a href=\"#\">try again</a>.");
+					else
+						parameter.retry(element);
 				}
 			};
 

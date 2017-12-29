@@ -13,7 +13,7 @@
 	"authors": [
 		"Marc-Antoine Loignon <info@lognoz.com>"
 	],
-	"description": "Making dynamic form is not supposed to be hard to do. With Autosave, improved user experience will never be as easy and as quick.",
+	"description": "Quick Autosave is the simplest, fastest way to send ajax request when form changes.",
 	"main": "./dist/latest/autosave.js",
 	"license": "BSD",
 	"ignore": [

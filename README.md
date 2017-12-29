@@ -11,7 +11,7 @@ You can get it on npm.
 npm install quick-autosave
 ```
 
-You can get it with bower.
+You can get it on bower.
 ```
 bower install quick-autosave
 ```

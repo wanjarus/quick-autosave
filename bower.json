@@ -13,7 +13,7 @@
 	"authors": [
 		"Marc-Antoine Loignon <info@lognoz.com>"
 	],
-	"description": "Quick Autosave is the simplest, fastest way to send ajax request when form changes.",
+	"description": "The simplest, fastest way to send ajax request when form changes.",
 	"main": "./dist/latest/autosave.js",
 	"license": "BSD",
 	"ignore": [

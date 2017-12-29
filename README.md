@@ -10,6 +10,12 @@ You can get it on npm.
 ```
 npm install quick-autosave
 ```
+
+You can get it with bower.
+```
+bower install quick-autosave
+```
+
 Or if you're not into package managment, just [download a ZIP](https://github.com/lognoz/autosave/archive/master.zip) file.
 
 ## Setup

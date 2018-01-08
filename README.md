@@ -22,7 +22,7 @@ Or if you're not into package managment, just [download a ZIP](https://github.co
 First, include the script located on the `dist` folder and jQuery.
 ```html
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="bower_components/quick-autosave/dist/latest/autosave.min.js"></script>
+<script src="node_modules/quick-autosave/dist/latest/autosave.min.js"></script>
 ```
 
 Now, you can configure your autosave with jQuery selector. 

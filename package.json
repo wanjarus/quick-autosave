@@ -1,6 +1,6 @@
 {
   "name": "quick-autosave",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "The simplest, fastest way to send ajax request when form changes.",
   "keywords": [
     "autosave",

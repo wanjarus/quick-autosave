@@ -1,4 +1,4 @@
-# QUICK AUTOSAVE
+# Quick Autosave
 Making good form that improves user experience is not supposed to be hard to do. Many web developers prefer to prioritize time production over quality. Quick Autosave is the simplest, fastest way to send ajax request when form changes.
 
 <a href="https://www.lognoz.com/quick-autosave/">
